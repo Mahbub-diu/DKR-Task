@@ -1,0 +1,114 @@
+@import 'partials/variables';
+@import 'partials/colors';
+@import 'partials/mixins';
+@import 'partials/common';
+
+// common css start from here
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: $barlow;
+  font-weight: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+// navbar section css start from here
+.header-main {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  transition: 0.6s;
+  padding: 0;
+  min-height: 50px;
+  //   background: red;
+
+  .container-fluid {
+    width: 95%;
+  }
+  .header-logo-box {
+    text-align: center;
+    img {
+      width: 140px;
+      padding: 10px 0px;
+    }
+  }
+  .header-left-box {
+    ul.nav {
+      li.nav-item {
+        @include left-box-li;
+        a.nav-link {
+          @include left-box-link;
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+  .header-right-box {
+    ul.nav {
+      li.nav-item {
+        @include left-box-li;
+        a.nav-link {
+          @include left-box-link;
+          &:hover {
+            font-weight: 600;
+          }
+        }
+      }
+    }
+  }
+
+  .nav-item-shape {
+    position: absolute;
+    z-index: -1;
+    bottom: -30px;
+    left: 50%;
+    background-color: white;
+    width: 170px;
+    height: 120px;
+    border-radius: 100%;
+    transform: translateX(-50%);
+  }
+}
+.header_content_post {
+  position: relative;
+  &::before {
+    content: '';
+    width: 65px;
+    height: 100%;
+    background: #fff;
+    position: absolute;
+    left: -48px;
+    top: 0;
+  }
+}
+// navbar section css end here
+.others-body {
+  //   margin-top: 150px;
+  background: green;
+}

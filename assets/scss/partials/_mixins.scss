@@ -1,0 +1,16 @@
+@mixin left-box-li {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  transform: inherit !important;
+  position: relative;
+}
+
+@mixin left-box-link {
+  text-transform: uppercase;
+  padding: 38px 12px;
+  font-size: 16px;
+  font-family: $barlow-m;
+  color: $black;
+  display: block;
+}

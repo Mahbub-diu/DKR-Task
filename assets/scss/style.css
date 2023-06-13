@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "barlowregular";
+  font-weight: normal;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-main {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 999;
+  background: #fff;
+  transition: 0.6s;
+  padding: 0;
+  min-height: 50px;
+}
+.header-main .container-fluid {
+  width: 95%;
+}
+.header-main .header-logo-box {
+  text-align: center;
+}
+.header-main .header-logo-box img {
+  width: 140px;
+  padding: 10px 0px;
+}
+.header-main .header-left-box ul.nav li.nav-item {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  transform: inherit !important;
+  position: relative;
+}
+.header-main .header-left-box ul.nav li.nav-item a.nav-link {
+  text-transform: uppercase;
+  padding: 38px 12px;
+  font-size: 16px;
+  font-family: "barlowmedium";
+  color: #000;
+  display: block;
+}
+.header-main .header-left-box ul.nav li.nav-item a.nav-link:hover {
+  font-weight: 600;
+}
+.header-main .header-right-box ul.nav li.nav-item {
+  width: 25%;
+  text-align: center;
+  display: inline-block;
+  transform: inherit !important;
+  position: relative;
+}
+.header-main .header-right-box ul.nav li.nav-item a.nav-link {
+  text-transform: uppercase;
+  padding: 38px 12px;
+  font-size: 16px;
+  font-family: "barlowmedium";
+  color: #000;
+  display: block;
+}
+.header-main .header-right-box ul.nav li.nav-item a.nav-link:hover {
+  font-weight: 600;
+}
+.header-main .nav-item-shape {
+  position: absolute;
+  z-index: -1;
+  bottom: -30px;
+  left: 50%;
+  background-color: white;
+  width: 170px;
+  height: 120px;
+  border-radius: 100%;
+  transform: translateX(-50%);
+}
+
+.header_content_post {
+  position: relative;
+}
+.header_content_post::before {
+  content: "";
+  width: 65px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  left: -48px;
+  top: 0;
+}
+
+.others-body {
+  background: green;
+}/*# sourceMappingURL=style.css.map */
