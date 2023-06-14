@@ -95,11 +95,13 @@ a {
   border-radius: 100%;
   transform: translateX(-50%);
 }
-
-.header_content_post {
+.header-main .header-all-content {
   position: relative;
+  background-color: #fff;
+  height: 100px;
+  filter: url("#goo");
 }
-.header_content_post::before {
+.header-main .header-all-content::before {
   content: "";
   width: 65px;
   height: 100%;
@@ -108,7 +110,27 @@ a {
   left: -48px;
   top: 0;
 }
+.header-main .header-all-content svg {
+  width: 0;
+  height: 0;
+}
+.header-main .header-all-content::after {
+  content: "";
+  width: 65px;
+  height: 100%;
+  background: #fff;
+  position: absolute;
+  right: -60px;
+  top: 0;
+}
 
-.others-body {
-  background: green;
+.home-slider-main .single-slider {
+  position: relative;
+  height: 100vh;
+}
+.home-slider-main .single-slider .slider-bg {
+  height: 100vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  background-position: top center !important;
 }/*# sourceMappingURL=style.css.map */

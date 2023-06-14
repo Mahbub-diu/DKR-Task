@@ -94,21 +94,49 @@ a {
     border-radius: 100%;
     transform: translateX(-50%);
   }
-}
-.header_content_post {
-  position: relative;
-  &::before {
-    content: '';
-    width: 65px;
-    height: 100%;
-    background: #fff;
-    position: absolute;
-    left: -48px;
-    top: 0;
+  .header-all-content {
+    position: relative;
+    background-color: #fff;
+    height: 100px;
+    filter: url('#goo');
+    &::before {
+      content: '';
+      width: 65px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      left: -48px;
+      top: 0;
+    }
+    svg {
+      width: 0;
+      height: 0;
+    }
+    &::after {
+      content: '';
+      width: 65px;
+      height: 100%;
+      background: #fff;
+      position: absolute;
+      right: -60px;
+      top: 0;
+    }
   }
 }
+
 // navbar section css end here
-.others-body {
-  //   margin-top: 150px;
-  background: green;
+
+// slider css start from here
+.home-slider-main {
+  .single-slider {
+    position: relative;
+    height: 100vh;
+
+    .slider-bg {
+      height: 100vh;
+      background-size: cover !important;
+      background-repeat: no-repeat !important;
+      background-position: top center !important;
+    }
+  }
 }
