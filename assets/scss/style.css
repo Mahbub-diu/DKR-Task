@@ -96,10 +96,10 @@ a {
   transform: translateX(-50%);
 }
 
-.header_content_post {
+.header-content-list {
   position: relative;
 }
-.header_content_post::before {
+.header-content-list::before {
   content: "";
   width: 65px;
   height: 100%;

@@ -1,7 +1,7 @@
 const itemsBar = document.querySelectorAll('.hover-shape');
 const itemsBarArr = Array.from(itemsBar);
 
-const headbar = document.querySelector('.header_content_pos');
+const headbar = document.querySelector('.header-content-single');
 itemsBarArr.forEach((item) => {
   item.addEventListener('mouseover', (e) => {
     itemsBarArr.forEach((item) => {
@@ -13,7 +13,7 @@ itemsBarArr.forEach((item) => {
         item.getBoundingClientRect().left +
         item.getBoundingClientRect().width / 2 -
         document
-          .querySelector('.row.header_content_pos')
+          .querySelector('.row.header-content-single')
           .getBoundingClientRect().left,
       ease: 'back.out(2)',
     });
